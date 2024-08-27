@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Weather</h1>
+        <div id="weather">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="filters">
+            <label for="days">Days of Forecast:</label>
+            <select id="days">
+                <option value="1">1 Day</option>
+                <option value="3">3 Days</option>
+                <option value="7">7 Days</option>
+            </select>
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="date">Date</option>
+                <option value="temp">Temperature</option>
+            </select>
+        </div>
+        <div id="weather-result">
+            <!-- Weather data will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
